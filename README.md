@@ -10,8 +10,12 @@ Economic Informatics. Aiming for a career in cybersecurity.
 - `bandit/` — OverTheWire Bandit write-ups (Linux/CLI fundamentals)
 
 ## Progress
+## Progress
 - [x] Bandit Level 0 → 1
-- [x] Bandit Level 1 → 2  
+- [x] Bandit Level 1 → 2
 - [x] Bandit Level 2 → 3
 - [x] Bandit Level 3 → 4
+- [x] Bandit Level 4 → 5
+- [x] Bandit Level 5 → 6
+
       
