@@ -21,6 +21,6 @@ Economic Informatics. Aiming for a career in cybersecurity.
 - [x] Bandit Level 7 → 8    
 - [x] Bandit Level 8 → 9    
 - [x] Bandit Level 9 → 10    
-- [] Bandit Level 10 → 11    
+- [x] Bandit Level 10 → 11    
 - [] Bandit Level 11 → 12    
 - [] Bandit Level 12 → 13    
