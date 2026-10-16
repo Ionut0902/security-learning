@@ -15,3 +15,8 @@ This is a summary of the new commands and concepts I learned while solving the b
 ### 3. Basic Cryptography (ROT13)
 * **Command:** `echo "encrypted_text" | tr 'a-zA-Z' 'n-za-mN-ZA-M'`
 * **Notes:** ROT13 is a substitution cipher that shifts every letter by 13 positions. I used the `tr` (translate) command directly in the Linux terminal to automatically decode the text, instead of relying on online tools.
+
+### 4. Base64 Decoding
+* **Command:** `echo "encoded_text" | base64 -d`
+* **Example:** `echo "cGljb0NURnt0ZXN0X2ZsYWd9" | base64 -d`
+* **Notes:** Base64 is not a secure encryption algorithm, but merely a data encoding scheme. I used the `-d` (decode) flag directly in the Linux terminal to revert the text back to its original readable format without needing online tools.
