@@ -26,3 +26,11 @@ This is a summary of the new commands and concepts I learned while solving the b
 * **Make executable:** `chmod +x [filename]` (Grants the file permission to be run as a program).
 * **Execute & Help Flags:** `./[filename] -h` (Runs a custom executable from the current directory. The `-h` flag opens its help menu, which often contains the CTF flag).
 * **Delete a file:** `rm [filename]` (Permanently removes a file to keep the workspace clean).
+
+### 6. Tab Autocompletion & Package Installation
+* **Tab Autocompletion:** Pressing the `Tab` key while typing a file or directory name will auto-complete it, preventing typos and saving time. If multiple files share the same prefix, pressing `Tab` twice lists all possible options.
+* **Install New Tools:** `sudo apt install [package_name] -y` (Uses the Advanced Package Tool to download and install missing commands, like `unzip`. The `-y` flag automatically answers 'yes' to prompts).
+
+### 7. Archives & Force Deletion
+* **Unzip a file:** `unzip [filename.zip]` (Extracts the contents of a compressed ZIP archive into the current directory).
+* **Force Delete Directory:** `rm -rf [directory_name]` (Deletes a folder and all of its nested contents. Standard `rm` or `rmdir` will fail if the folder is not empty. The `-r` means recursive, `-f` means force. Use with caution!).
