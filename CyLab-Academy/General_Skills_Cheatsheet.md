@@ -20,3 +20,9 @@ This is a summary of the new commands and concepts I learned while solving the b
 * **Command:** `echo "encoded_text" | base64 -d`
 * **Example:** `echo "cGljb0NURnt0ZXN0X2ZsYWd9" | base64 -d`
 * **Notes:** Base64 is not a secure encryption algorithm, but merely a data encoding scheme. I used the `-d` (decode) flag directly in the Linux terminal to revert the text back to its original readable format without needing online tools.
+
+### 5. File Management & Executing Binaries
+* **Download a file:** `wget [link]` (Downloads a file directly into the Linux terminal).
+* **Make executable:** `chmod +x [filename]` (Grants the file permission to be run as a program).
+* **Execute & Help Flags:** `./[filename] -h` (Runs a custom executable from the current directory. The `-h` flag opens its help menu, which often contains the CTF flag).
+* **Delete a file:** `rm [filename]` (Permanently removes a file to keep the workspace clean).
