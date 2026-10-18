@@ -60,3 +60,8 @@ This is a summary of the new commands and concepts I learned while solving the b
 * **Concept:** Many command-line tools and scripts require additional options (arguments) to run correctly. If run without them, they usually print a `Usage:` message indicating the expected syntax.
 * **Syntax Breakdown:** In a message like `Usage: script.py (-e/-d) [file]`, the parentheses `()` indicate required choices, and the brackets `[]` indicate placeholders for data (like a filename) where the brackets themselves should not be typed.
 * **Example:** `python3 ende.py -d flag.txt.en` (Runs the script, passing `-d` for decrypt and targeting the encrypted file).
+
+### 14. Code Obfuscation & Hexadecimal Values
+* **Concept:** Developers (and malware authors) often hide hardcoded passwords or strings by converting them into hexadecimal character codes (e.g., `chr(0x34)` instead of `"4"`).
+* **Deobfuscation:** You can quickly decode these strings using Python's interactive shell. 
+* **Example:** Open Python by typing `python3`, paste the obfuscated string (e.g., `chr(0x34) + chr(0x61)`), and hit Enter. Python will evaluate the code and print the readable string, revealing the hidden data.
