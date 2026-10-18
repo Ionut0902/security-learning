@@ -55,3 +55,8 @@ This is a summary of the new commands and concepts I learned while solving the b
 * **Concept:** The `robots.txt` file is a standard plain-text file placed at the root of a website. It instructs search engine crawlers (web robots) which directories or files they are allowed or forbidden to index.
 * **Exploitation:** In CTFs, developers often use it to hide sensitive endpoints or flags. By appending `/robots.txt` to the website's main URL, you can publicly view these "hidden" paths.
 * **Execution:** Look for lines starting with `Disallow: /[secret_path]` and manually navigate to those endpoints in your browser.
+
+### 13. Script Arguments & Usage Menus
+* **Concept:** Many command-line tools and scripts require additional options (arguments) to run correctly. If run without them, they usually print a `Usage:` message indicating the expected syntax.
+* **Syntax Breakdown:** In a message like `Usage: script.py (-e/-d) [file]`, the parentheses `()` indicate required choices, and the brackets `[]` indicate placeholders for data (like a filename) where the brackets themselves should not be typed.
+* **Example:** `python3 ende.py -d flag.txt.en` (Runs the script, passing `-d` for decrypt and targeting the encrypted file).
