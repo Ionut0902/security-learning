@@ -39,3 +39,9 @@ This is a summary of the new commands and concepts I learned while solving the b
 * **Concept:** Web challenges often hide flags, developer comments, or sensitive logic within the website's front-end source code (HTML, CSS, and JavaScript).
 * **Tool:** Browser Developer Tools (accessed via `F12`, `Ctrl+Shift+I`, or Right-Click -> `Inspect`).
 * **Notes:** The first step in any web challenge is to thoroughly inspect the page source and all linked asset files. No Linux terminal is required for basic client-side web enumeration.
+
+### 9. Binary Analysis & Output Filtering (Piping)
+* **Extract Strings:** `strings [filename]` (Extracts and displays only the human-readable text characters from a compiled binary or non-text file).
+* **The Pipe Operator:** `|` (Takes the output of the command on the left and passes it as input to the command on the right).
+* **Search / Filter:** `grep "keyword"` (Searches through text and outputs only the lines that contain the specified keyword).
+* **Combined Example:** `strings challenge_file | grep "CTF"` (Extracts all readable text from a file and instantly filters it to find the flag, saving the effort of reading thousands of lines manually).
