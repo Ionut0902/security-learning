@@ -50,3 +50,8 @@ This is a summary of the new commands and concepts I learned while solving the b
 * **Command:** `grep -o "pattern{.*}"`
 * **Example:** `cat data.txt | grep -o "academy{.*}"`
 * **Notes:** By default, `grep` outputs the entire line where the match was found. If a file consists of one massive continuous line without line breaks, the output will be overwhelming. Using the `-o` (only matching) flag forces `grep` to print strictly the matched phrase. Adding `.*` inside the brackets acts as a wildcard to capture the entire contents of the flag.
+
+### 11. Web Enumeration (robots.txt)
+* **Concept:** The `robots.txt` file is a standard plain-text file placed at the root of a website. It instructs search engine crawlers (web robots) which directories or files they are allowed or forbidden to index.
+* **Exploitation:** In CTFs, developers often use it to hide sensitive endpoints or flags. By appending `/robots.txt` to the website's main URL, you can publicly view these "hidden" paths.
+* **Execution:** Look for lines starting with `Disallow: /[secret_path]` and manually navigate to those endpoints in your browser.
