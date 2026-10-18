@@ -32,7 +32,10 @@ This is a summary of the new commands and concepts I learned while solving the b
 * **Install New Tools:** `sudo apt install [package_name] -y` (Uses the Advanced Package Tool to download and install missing commands, like `unzip`. The `-y` flag automatically answers 'yes' to prompts).
 
 
-
+### 7. Web Exploitation & Source Code Inspection
+* **Concept:** Web challenges often hide flags, developer comments, or sensitive logic within the website's front-end source code (HTML, CSS, and JavaScript).
+* **Tool:** Browser Developer Tools (accessed via `F12`, `Ctrl+Shift+I`, or Right-Click -> `Inspect`).
+* **Notes:** The first step in any web challenge is to thoroughly inspect the page source and all linked asset files. No Linux terminal is required for basic client-side web enumeration.
 
 
 
