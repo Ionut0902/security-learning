@@ -45,3 +45,8 @@ This is a summary of the new commands and concepts I learned while solving the b
 * **The Pipe Operator:** `|` (Takes the output of the command on the left and passes it as input to the command on the right).
 * **Search / Filter:** `grep "keyword"` (Searches through text and outputs only the lines that contain the specified keyword).
 * **Combined Example:** `strings challenge_file | grep "CTF"` (Extracts all readable text from a file and instantly filters it to find the flag, saving the effort of reading thousands of lines manually).
+
+### 10. Advanced Search (Only Matching & Regex)
+* **Command:** `grep -o "pattern{.*}"`
+* **Example:** `cat data.txt | grep -o "academy{.*}"`
+* **Notes:** By default, `grep` outputs the entire line where the match was found. If a file consists of one massive continuous line without line breaks, the output will be overwhelming. Using the `-o` (only matching) flag forces `grep` to print strictly the matched phrase. Adding `.*` inside the brackets acts as a wildcard to capture the entire contents of the flag.
