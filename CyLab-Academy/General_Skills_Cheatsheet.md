@@ -31,11 +31,29 @@ This is a summary of the new commands and concepts I learned while solving the b
 * **Tab Autocompletion:** Pressing the `Tab` key while typing a file or directory name will auto-complete it, preventing typos and saving time. If multiple files share the same prefix, pressing `Tab` twice lists all possible options.
 * **Install New Tools:** `sudo apt install [package_name] -y` (Uses the Advanced Package Tool to download and install missing commands, like `unzip`. The `-y` flag automatically answers 'yes' to prompts).
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### 8. Web Exploitation & Source Code Inspection
 * **Concept:** Web challenges often hide flags, developer comments, or sensitive logic within the website's front-end source code (HTML, CSS, and JavaScript).
 * **Tool:** Browser Developer Tools (accessed via `F12`, `Ctrl+Shift+I`, or Right-Click -> `Inspect`).
 * **Notes:** The first step in any web challenge is to thoroughly inspect the page source and all linked asset files. No Linux terminal is required for basic client-side web enumeration.
-
 ### 7. Archives & Force Deletion
 * **Unzip a file:** `unzip [filename.zip]` (Extracts the contents of a compressed ZIP archive into the current directory).
 * **Force Delete Directory:** `rm -rf [directory_name]` (Deletes a folder and all of its nested contents. Standard `rm` or `rmdir` will fail if the folder is not empty. The `-r` means recursive, `-f` means force. Use with caution!).
