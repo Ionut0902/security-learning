@@ -87,3 +87,8 @@ This is a summary of the new commands and concepts I learned while solving the b
 ### 18. Python Indentation & Execution Order
 * **Indentation Rules:** Python uses whitespace (indentation) instead of curly braces `{}` to define code blocks (`def`, `for`, `if`). Every nested block must be shifted to the right using 1 Tab. Never mix Tabs and Spaces to avoid `IndentationError`.
 * **Execution Order:** Python runs scripts sequentially from top to bottom. Variables and functions must be defined in code *before* they are referenced or executed, otherwise Python will throw a `NameError`.
+
+### 19. Reading Wordlists & File Handling in Python
+* **Concept:** When potential passwords are stored in an external `.txt` file (a wordlist/dictionary) rather than hardcoded in the script, Python must open and read the file line-by-line to perform a Dictionary Attack.
+* **Safe File Opening (`with open`):** Use `with open("dictionary.txt", "r") as f:` to open the file in read mode. The `with` block automatically closes the file after reading, preventing memory leaks.
+* **Stripping Newlines (`.strip()`):** Always clean line strings with `.strip()` (e.g., `user_pw = line.strip()`). External `.txt` files store an invisible newline character (`\n`) at the end of every line when you hit Enter. If not stripped, the string hash will include `\n`, causing all password checks to fail.
