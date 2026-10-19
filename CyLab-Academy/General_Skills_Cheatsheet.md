@@ -83,3 +83,7 @@ This is a summary of the new commands and concepts I learned while solving the b
 * **Hidden Files:** In Linux, any file or directory that starts with a dot (`.`) is hidden by default. The standard `ls` command will not show them.
 * **Viewing Hidden Files:** Use `ls -a` (list all) to reveal hidden files alongside normal ones.
 * **History Files:** Files like `.bash_history` or `.python_history` are automatically created by the system to log the commands you type. This is what allows you to press the `Up` arrow key in the terminal to quickly recall and reuse previous commands.
+
+### 18. Python Indentation & Execution Order
+* **Indentation Rules:** Python uses whitespace (indentation) instead of curly braces `{}` to define code blocks (`def`, `for`, `if`). Every nested block must be shifted to the right using 1 Tab. Never mix Tabs and Spaces to avoid `IndentationError`.
+* **Execution Order:** Python runs scripts sequentially from top to bottom. Variables and functions must be defined in code *before* they are referenced or executed, otherwise Python will throw a `NameError`.
