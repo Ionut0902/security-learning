@@ -65,3 +65,21 @@ This is a summary of the new commands and concepts I learned while solving the b
 * **Concept:** Developers (and malware authors) often hide hardcoded passwords or strings by converting them into hexadecimal character codes (e.g., `chr(0x34)` instead of `"4"`).
 * **Deobfuscation:** You can quickly decode these strings using Python's interactive shell. 
 * **Example:** Open Python by typing `python3`, paste the obfuscated string (e.g., `chr(0x34) + chr(0x61)`), and hit Enter. Python will evaluate the code and print the readable string, revealing the hidden data.
+
+### 15. Script Modification & Brute-Forcing
+* **Concept:** Manually entering passwords is not scalable. If a challenge provides a large list of potential passwords (a wordlist), the standard approach is to automate the process (Brute-forcing / Dictionary Attack).
+* **Execution:** Instead of running the provided script as-is, edit the source code. Replace the manual user input function (`input()`) with a `for` loop that iterates through every password in an array or a `.txt` file until the correct hash is matched.
+* **Mindset:** "Don't work hard, let the computer do the work." Modifying challenge scripts to automate the solution is a core exploitation skill.
+
+### 16. Terminal Text Editing (nano)
+* **Concept:** `nano` is a simple, command-line text editor built into Linux. It allows you to view and edit files (like Python scripts) directly within the terminal without needing a graphical interface.
+* **Open/Create a file:** `nano [filename.extension]`
+* **How to Save and Exit:**
+  1. Press `Ctrl + O` (Write Out) to save.
+  2. Press `Enter` to confirm the filename.
+  3. Press `Ctrl + X` to exit `nano` and return to the terminal shell.
+
+### 17. Hidden Files & Command History
+* **Hidden Files:** In Linux, any file or directory that starts with a dot (`.`) is hidden by default. The standard `ls` command will not show them.
+* **Viewing Hidden Files:** Use `ls -a` (list all) to reveal hidden files alongside normal ones.
+* **History Files:** Files like `.bash_history` or `.python_history` are automatically created by the system to log the commands you type. This is what allows you to press the `Up` arrow key in the terminal to quickly recall and reuse previous commands.
