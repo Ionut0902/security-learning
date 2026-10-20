@@ -11,7 +11,7 @@ Economic Informatics. Aiming for a career in cybersecurity.
 - `CyLab-Academy/`
 
 
-## Progress
+## Progress                                            
 - [x] Bandit Level 0 → 1
 - [x] Bandit Level 1 → 2
 - [x] Bandit Level 2 → 3
@@ -27,3 +27,8 @@ Economic Informatics. Aiming for a career in cybersecurity.
 - [x] Bandit Level 12 → 13
 - [x] Bandit Level 13→ 14
 - [x] Bandit Level 15 → 16    
+
+
+
+### CyLab Academy / picoCTF
+- [x] The Beginner's Guide to the Challenge Library (100% Completed)
