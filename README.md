@@ -8,7 +8,8 @@ Economic Informatics. Aiming for a career in cybersecurity.
 
 ## Contents
 - `bandit/` — OverTheWire Bandit write-ups (Linux/CLI fundamentals)
-- `CyLab-Academy/`
+- `CyLab-Academy/` — Beginner's Guide to the Challenge Library
+- `General_Skills_Cheatsheet.md` — CTF techniques, Linux commands, and scripting notes
 
 
 ## Progress                                            
