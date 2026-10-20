@@ -97,3 +97,10 @@ This is a summary of the new commands and concepts I learned while solving the b
 * **Concept:** Flags are often embedded directly inside web page source code, HTML comments, hidden tags, or raw text blocks.
 * **Execution:** Right-click on the page -> `Inspect` (or `F12` / `Ctrl + U` for View Source) to open Developer Tools.
 * **Search Technique:** Use `Ctrl + F` within the source viewer or inspect tab to search for the string `picoCTF{` across all elements, script tags, and comments.
+
+
+### 21. Advanced Zip Searching & Stream Processing (`unzip -p` & `grep -o`)
+* **Stream Archive Content (`unzip -p`):** The `-p` flag outputs the text of all files inside a `.zip` directly to stdout (RAM), allowing you to pipe (`|`) the data directly to `grep` without extracting files to the SSD.
+* **Exact Match Extraction (`grep -o`):** The `-o` (*only matching*) flag prints exclusively the text that matches the search pattern (e.g., `picoCTF{...}` or `academy{...}`), discarding all surrounding lines and clutter.
+* **One-Liner Flag Extraction:** `unzip -p archive.zip | grep -o "picoCTF{.*}"` extracts and displays the clean flag instantly.
+* **Recursive Search on Disk (`grep -r`):** If files are already extracted to disk, use `grep -rn "picoCTF" .` to search recursively through all subdirectories and display file paths with line numbers.
