@@ -104,3 +104,17 @@ This is a summary of the new commands and concepts I learned while solving the b
 * **Exact Match Extraction (`grep -o`):** The `-o` (*only matching*) flag prints exclusively the text that matches the search pattern (e.g., `picoCTF{...}` or `academy{...}`), discarding all surrounding lines and clutter.
 * **One-Liner Flag Extraction:** `unzip -p archive.zip | grep -o "picoCTF{.*}"` extracts and displays the clean flag instantly.
 * **Recursive Search on Disk (`grep -r`):** If files are already extracted to disk, use `grep -rn "picoCTF" .` to search recursively through all subdirectories and display file paths with line numbers.
+
+### 23. Reverse Engineering Python Keygens & SHA-256 Indexing
+* **Concept:** CTF keygen challenges often reconstruct flags dynamically by hashing user credentials (e.g., `busername`) and comparing specific character indices.
+* **Static vs. Dynamic Analysis:** Inspect `check_key()` functions directly using `cat` or `nano` instead of guessing passwords. Identify the hash algorithm (`hashlib.sha256`) and the extracted character index order.
+* **Python Reconstruction Script:**
+  ```python
+  import hashlib
+  
+  user = b"MORTON"
+  h = hashlib.sha256(user).hexdigest()
+  
+  # Extract dynamic characters based on check_key() index logic
+  dynamic_part = h[4] + h[5] + h[3] + h[6] + h[2] + h[7] + h[1] + h[8]
+  print(f"picoCTF{{1f_y0u_w4nt_t0_kn0w_{dynamic_part}}}")
