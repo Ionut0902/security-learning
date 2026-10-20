@@ -92,3 +92,8 @@ This is a summary of the new commands and concepts I learned while solving the b
 * **Concept:** When potential passwords are stored in an external `.txt` file (a wordlist/dictionary) rather than hardcoded in the script, Python must open and read the file line-by-line to perform a Dictionary Attack.
 * **Safe File Opening (`with open`):** Use `with open("dictionary.txt", "r") as f:` to open the file in read mode. The `with` block automatically closes the file after reading, preventing memory leaks.
 * **Stripping Newlines (`.strip()`):** Always clean line strings with `.strip()` (e.g., `user_pw = line.strip()`). External `.txt` files store an invisible newline character (`\n`) at the end of every line when you hit Enter. If not stripped, the string hash will include `\n`, causing all password checks to fail.
+
+### 20. Source Code & Element Inspection
+* **Concept:** Flags are often embedded directly inside web page source code, HTML comments, hidden tags, or raw text blocks.
+* **Execution:** Right-click on the page -> `Inspect` (or `F12` / `Ctrl + U` for View Source) to open Developer Tools.
+* **Search Technique:** Use `Ctrl + F` within the source viewer or inspect tab to search for the string `picoCTF{` across all elements, script tags, and comments.
