@@ -33,3 +33,4 @@ Economic Informatics. Aiming for a career in cybersecurity.
 
 ### CyLab Academy / picoCTF
 - [x] The Beginner's Guide to the Challenge Library (100% Completed)
+- [x] General Skills in CTF's (100% Completed)
